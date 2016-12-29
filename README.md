@@ -9,6 +9,8 @@ npm i -S validator-schema
 ## Schema validation example
 
 ```ts
+import validator, { Schema } from 'validator-schema';
+
 const schema: Schema = {
   name: {
     type: 'string',
