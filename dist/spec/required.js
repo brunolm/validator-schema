@@ -25,7 +25,6 @@ describe('required', function () {
         var result = validate(user);
         chai_1.assert.isFalse(result.valid);
         chai_1.assert.equal(result.errors.length, 1);
-        console.log('result.errors', result.errors);
     });
 });
 //# sourceMappingURL=required.js.map

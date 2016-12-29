@@ -30,7 +30,5 @@ describe('required', () => {
     const result = validate(user);
     assert.isFalse(result.valid);
     assert.equal(result.errors.length, 1);
-    console.log('result.errors', result.errors);
-
   });
 });
