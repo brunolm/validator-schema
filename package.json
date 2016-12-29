@@ -9,7 +9,7 @@
     "preversion": "npm run build",
     "build": "tsc",
     "build:watch": "tsc -w",
-    "test": "mocha spec"
+    "test": "mocha dist/spec"
   },
   "author": {
     "email": "brunolm7@gmail.com",
