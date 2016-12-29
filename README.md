@@ -23,7 +23,7 @@ const user = {
   name: 'Goku',
 };
 
-validate(user); // true
+validate(user); // { valid: true, errors: [] }
 ```
 
 See [tests](spec) for more examples.
