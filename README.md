@@ -9,7 +9,7 @@ npm i -S validator-schema
 ## Schema validation example
 
 ```ts
-const schema = {
+const schema: Schema = {
   name: {
     type: 'string',
     test: /goku/i,

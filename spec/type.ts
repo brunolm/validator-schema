@@ -1,9 +1,9 @@
 import { assert } from 'chai';
-import validator from '../src/index';
+import validator, { Schema } from '../src/index';
 
 describe('type', () => {
   it('should validate type returning true for valid', () => {
-    const schema = {
+    const schema: Schema = {
       name: {
         type: 'string',
       },
@@ -18,7 +18,7 @@ describe('type', () => {
   });
 
   it('should validate type returning false for invalid', () => {
-    const schema = {
+    const schema: Schema = {
       name: {
         type: 'string',
       },

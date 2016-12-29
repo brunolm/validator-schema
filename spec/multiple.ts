@@ -1,9 +1,9 @@
 import { assert } from 'chai';
-import validator from '../src/index';
+import validator, { Schema } from '../src/index';
 
 describe('multiple validators', () => {
   it('should work with multiple validators', () => {
-    const schema = {
+    const schema: Schema = {
       name: {
         type: 'string',
         test: /GOKU/,

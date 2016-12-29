@@ -1,9 +1,9 @@
 import { assert } from 'chai';
-import validator from '../src/index';
+import validator, { Schema } from '../src/index';
 
 describe('fn', () => {
   it('should validate fn returning true for valid', () => {
-    const schema = {
+    const schema: Schema = {
       name: {
         fn: v => v.length === 4,
       },
@@ -18,7 +18,7 @@ describe('fn', () => {
   });
 
   it('should validate fn returning false for invalid', () => {
-    const schema = {
+    const schema: Schema = {
       name: {
         fn: v => v.length > 8000,
       },

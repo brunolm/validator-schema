@@ -1,9 +1,9 @@
 import { assert } from 'chai';
-import validator from '../src/index';
+import validator, { Schema } from '../src/index';
 
 describe('required', () => {
   it('should validate required returning true for valid', () => {
-    const schema = {
+    const schema: Schema = {
       name: {
         required: true,
       },
@@ -18,7 +18,7 @@ describe('required', () => {
   });
 
   it('should validate required returning false for invalid', () => {
-    const schema = {
+    const schema: Schema = {
       name: {
         required: true,
       },

@@ -1,9 +1,9 @@
 import { assert } from 'chai';
-import validator from '../src/index';
+import validator, { Schema } from '../src/index';
 
 describe('test', () => {
   it('should validate test returning true for valid', () => {
-    const schema = {
+    const schema: Schema = {
       name: {
         test: /goku/i,
       },
@@ -18,7 +18,7 @@ describe('test', () => {
   });
 
   it('should validate test returning false for invalid', () => {
-    const schema = {
+    const schema: Schema = {
       name: {
         test: /GOKU/,
       },

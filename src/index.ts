@@ -1,4 +1,13 @@
-export default function createValidator(schema: Object) {
+export interface Schema {
+  [key: string]: {
+    test?: RegExp;
+    type?: string;
+    required?: boolean;
+    fn?: (val: any) => boolean;
+  },
+}
+
+export default function createValidator(schema: Schema) {
   const schemaKeys = Object.keys(schema);
 
   return function validate(o: Object) {
